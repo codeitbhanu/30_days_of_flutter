@@ -6,8 +6,14 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Material(
-      child: Center(
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("Catalogue App"),
+      ),
+      drawer: Drawer(
+        child: Text("Menu Item - 1"),
+      ),
+      body: Center(
         child: Container(
           child: Text("I'm $name and my age is $age"),
         ),
